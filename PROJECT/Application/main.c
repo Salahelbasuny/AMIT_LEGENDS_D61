@@ -223,7 +223,7 @@ void __vector_2(void)
 	}
 	else
 	{
-		Display_TEMP += 1;
+		Display_TEMP += 5;
 		if (Display_TEMP >= MAX_TEMP)
 			Display_TEMP = MAX_TEMP;
 	}
@@ -248,7 +248,7 @@ void __vector_3(void)
 	}
 	else
 	{
-		Display_TEMP -= 1;
+		Display_TEMP -= 5;
 		if (Display_TEMP <= MIN_TEMP)
 			Display_TEMP = MIN_TEMP;
 	}

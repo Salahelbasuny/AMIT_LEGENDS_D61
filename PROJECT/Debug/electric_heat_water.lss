@@ -5689,9 +5689,9 @@ void __vector_2(void)
 	}
 	else
 	{
-		Display_TEMP += 1;
+		Display_TEMP += 5;
     23fe:	80 91 7f 00 	lds	r24, 0x007F
-    2402:	8f 5f       	subi	r24, 0xFF	; 255
+    2402:	8b 5f       	subi	r24, 0xFB	; 251
     2404:	80 93 7f 00 	sts	0x007F, r24
 		if (Display_TEMP >= MAX_TEMP)
     2408:	80 91 7f 00 	lds	r24, 0x007F
@@ -5772,9 +5772,9 @@ void __vector_3(void)
 	}
 	else
 	{
-		Display_TEMP -= 1;
+		Display_TEMP -= 5;
     2488:	80 91 7f 00 	lds	r24, 0x007F
-    248c:	81 50       	subi	r24, 0x01	; 1
+    248c:	85 50       	subi	r24, 0x05	; 5
     248e:	80 93 7f 00 	sts	0x007F, r24
 		if (Display_TEMP <= MIN_TEMP)
     2492:	80 91 7f 00 	lds	r24, 0x007F
