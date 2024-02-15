@@ -1,0 +1,9 @@
+
+#ifndef TMR0_CONFIG_H_
+#define TMR0_CONFIG_H_
+
+#define TMR0_PRELOAD_VALUE 82
+#define TMR0_OVER_FLOW_COUNTER 2930
+#define TMR0_CTC_COUNTER 100
+#define TMR0_MODE TMR0_CTC_MODE
+#endif /* TMR0_CONFIG_H_ */
